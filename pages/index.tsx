@@ -65,9 +65,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>next-candy-machine</title>
+        <title>911 Thugz Life</title>
         <meta
-          name="description"
+          name="911 generative Thugz NFTs are invading the Solana Blockchain 🖥️ Website : https://Thugz.Life"
           content="Simplified NextJs with typescript example app integrated with Metaplex's Candy Machine"
         />
         <link rel="icon" href="/favicon.ico" />
@@ -76,7 +76,7 @@ export default function Home() {
       <div className="flex flex-col items-center min-h-screen mx-6">
         <Toaster />
         <div className="flex items-center justify-between w-full mt-3">
-          <h1 className="text-2xl font-bold">next-candy-machine</h1>
+          <h1 className="text-2xl font-bold">Thugz Life Mint Page</h1>
           <div className="flex items-center">
             {connected && (
               <div className="flex items-end mr-2">
@@ -99,12 +99,12 @@ export default function Home() {
         </div>
         {connected && (
           <p className="mr-auto text-sm">
-            <span className="font-bold">Available/Minted/Total:</span>{" "}
+            <span className="font-bold">Available / Minted / Total :</span>{" "}
             {nftsData.itemsRemaining}/{nftsData.itemsRedeemed}/
             {nftsData.itemsAvailable}
           </p>
         )}
-        <div className="flex items-start justify-center w-11/12 my-10">
+        <div className="flex items-start justify-center w-11/12 my-10 frame-mintbtn">
           {connected ? (
             <>
               {new Date(mintStartDate).getTime() < Date.now() ? (
@@ -142,7 +142,7 @@ export default function Home() {
             <p>connect wallet to mint</p>
           )}
         </div>
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full frame-wallet">
           <h2 className="text-2xl font-bold">My NFTs</h2>
           <div className="flex mt-3 gap-x-2">
             {(nfts as any).map((nft: any, i: number) => {
