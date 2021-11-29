@@ -1,6 +1,6 @@
 {
   "license": "MIT",
-  "name": "911 Thugz Life",
+  "name": "911-thugz-life",
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
