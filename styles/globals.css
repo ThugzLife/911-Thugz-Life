@@ -29,4 +29,7 @@ a {
   margin-right: 1%;
   padding-top: 10px;
 }
-.frame-wallet {}
+
+.frame-wallet {
+  background: url('img/ipad.png') no-repeat;
+}
