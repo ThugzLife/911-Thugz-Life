@@ -32,4 +32,7 @@ a {
 
 .frame-wallet {
   background: url('img/ipad.png') no-repeat;
+  width: 880px;
+  height: 592px;
+  padding: 30px 115px;
 }
